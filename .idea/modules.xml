@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ModelSample.iml" filepath="$PROJECT_DIR$/ModelSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObserveModel/ObserveModel.iml" filepath="$PROJECT_DIR$/ObserveModel/ObserveModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProxySample/ProxySample.iml" filepath="$PROJECT_DIR$/ProxySample/ProxySample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadSample/ThreadSample.iml" filepath="$PROJECT_DIR$/ThreadSample/ThreadSample.iml" />
+    </modules>
+  </component>
+</project>
