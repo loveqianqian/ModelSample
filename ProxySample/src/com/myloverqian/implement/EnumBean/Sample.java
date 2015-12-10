@@ -8,5 +8,6 @@ public enum Sample {
     MILD,
     MEDIUM,
     HOT,
-    FLAMING
+    FLAMING,
+    SMILE
 }
