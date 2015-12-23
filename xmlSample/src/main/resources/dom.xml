@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+ <book id="001">
+	<title>think in java</title>
+	<language>Java</language>
+	<author>JK.Rowling</author>
+ </book>
+ <book id="002">
+	<title>Learning xml</title>
+	<language>xml</language>
+	<author>Erik T. Ray</author>
+ </book>
+ <book id="003">
+	<title>Spring</title>
+	<language>Java</language>
+	<author>Aaron Diao</author>
+ </book>
+</books>
