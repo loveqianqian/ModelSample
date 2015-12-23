@@ -1,7 +1,6 @@
 package test.FileTest;
 
 import java.io.*;
-import java.util.regex.Pattern;
 
 /**
  * Created by zhiwei on 2015/12/5.

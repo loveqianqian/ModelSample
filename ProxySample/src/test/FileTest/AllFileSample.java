@@ -3,7 +3,6 @@ package test.FileTest;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.regex.Pattern;
 
 /**
  * Created by zhiwei on 2015/12/5.

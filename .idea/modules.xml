@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ModelSample.iml" filepath="$PROJECT_DIR$/ModelSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserveModel/ObserveModel.iml" filepath="$PROJECT_DIR$/ObserveModel/ObserveModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProxySample/ProxySample.iml" filepath="$PROJECT_DIR$/ProxySample/ProxySample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwingSample/SwingSample.iml" filepath="$PROJECT_DIR$/SwingSample/SwingSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadSample/ThreadSample.iml" filepath="$PROJECT_DIR$/ThreadSample/ThreadSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmlSample/xmlSample.iml" filepath="$PROJECT_DIR$/xmlSample/xmlSample.iml" />
     </modules>
