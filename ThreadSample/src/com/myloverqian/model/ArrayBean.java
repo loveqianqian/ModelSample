@@ -1,7 +1,5 @@
 package com.myloverqian.model;
 
-import java.util.Collections;
-
 /**
  * Created by zhiwei on 2015/12/8.
  */
