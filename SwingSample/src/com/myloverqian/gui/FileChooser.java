@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 /**
  * Created by zhiwei on 2015/12/24.
@@ -26,17 +28,13 @@ public class FileChooser extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
         JFileChooser jfc = new JFileChooser();
-        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-        jfc.showDialog(new JLabel(), "选择");
+        jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        jfc.showDialog(new JLabel(), "swift");
         File file = jfc.getSelectedFile();
         if (file.isDirectory()) {
-            System.out.println("文件夹:" + file.getAbsolutePath());
-        } else if (file.isFile()) {
-            System.out.println("文件:" + file.getAbsolutePath());
+            System.out.println("directory:" + file.getAbsolutePath());
         }
         System.out.println(jfc.getSelectedFile().getName());
-
     }
 }
