@@ -71,7 +71,7 @@ public class ReadFile {
     }
 
     /**
-     * åŠ è½½è·¯å¾„æŒ‰é’®
+     * open file
      */
     private class openActionPerformed implements ActionListener {
 
@@ -87,9 +87,6 @@ public class ReadFile {
         }
     }
 
-    /**
-     * ç¬¬ä¸€ä¸ªåˆ†ææ–¹æ³•
-     */
     private class sampleActionPerformed1 implements ActionListener {
 
         @Override
@@ -110,12 +107,12 @@ public class ReadFile {
                     br = new BufferedReader(isr);
                     String line = "";
                     while ((line = br.readLine()) != null) {
-                        if (line.contains("æ£€æŸ¥æŠ¥å‘Šæ•°æ®")) {
-                            String msg = line.substring(line.indexOf("æ£€æŸ¥æŠ¥å‘Šæ•°æ®ï¼š") + "æ£€æŸ¥æŠ¥å‘Šæ•°æ®ï¼š".length());
-                            if (line.contains("å‘ˆ\"å‰‘é˜\"çŠ¶") || line.contains("åº¦\"S\"å½¢")) {
+                        if (line.contains("¼ì²é±¨¸æÊı¾İ")) {
+                            String msg = line.substring(line.indexOf("¼ì²é±¨¸æÊı¾İ£º") + "¼ì²é±¨¸æÊı¾İ£º".length());
+                            if (line.contains("³Ê\"½£ÇÊ\"×´") || line.contains("¶È\"S\"ĞÎ")) {
                                 orgSb.append(msg + "\n");
-                                msg = msg.replace("å‘ˆ\"å‰‘é˜\"çŠ¶", "å‘ˆ(å‰‘é˜)çŠ¶");
-                                msg = msg.replace("åº¦\"S\"å½¢", "åº¦(S)å½¢");
+                                msg = msg.replace("³Ê\"½£ÇÊ\"×´", "³Ê(½£ÇÊ)×´");
+                                msg = msg.replace("¶È\"S\"ĞÎ", "¶È(S)ĞÎ");
                             }
 //                            JSONObject jsonObject = JSONObject.fromObject(msg);
 //                            sb.append(jsonObject + "\n");

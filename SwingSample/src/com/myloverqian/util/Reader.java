@@ -32,12 +32,12 @@ public class Reader {
             String line = "";
             String[] arrs = null;
             while ((line = br.readLine()) != null) {
-                if (line.contains("æ£€æŸ¥æŠ¥å‘Šæ•°æ®")) {
-                    String msg = line.substring(line.indexOf("æ£€æŸ¥æŠ¥å‘Šæ•°æ®ï¼š") + "æ£€æŸ¥æŠ¥å‘Šæ•°æ®ï¼š".length());
-                    if (line.contains("å‘ˆ\"å‰‘é˜\"çŠ¶") || line.contains("åº¦\"S\"å½¢")) {
+                if (line.contains("¼ì²é±¨¸æÊı¾İ")) {
+                    String msg = line.substring(line.indexOf("¼ì²é±¨¸æÊı¾İ£º") + "¼ì²é±¨¸æÊı¾İ£º".length());
+                    if (line.contains("³Ê\"½£ÇÊ\"×´") || line.contains("¶È\"S\"ĞÎ")) {
                         System.out.println(msg);
-                        msg = msg.replace("å‘ˆ\"å‰‘é˜\"çŠ¶", "å‘ˆ(å‰‘é˜)çŠ¶");
-                        msg = msg.replace("åº¦\"S\"å½¢", "åº¦(S)å½¢");
+                        msg = msg.replace("³Ê\"½£ÇÊ\"×´", "³Ê(½£ÇÊ)×´");
+                        msg = msg.replace("¶È\"S\"ĞÎ", "¶È(S)ĞÎ");
                     }
                     JSONObject jsonObject = null;
                     try {
@@ -359,6 +359,6 @@ public class Reader {
 
     @Test
     public void test111() {
-        System.out.println("=2015-12-18 01:55:24,441 INFO  [http-8080-5] impl.GatherServiceImpl (GatherServiceImpl.java:1298)     - æ£€éªŒç¡®è®¤æ•°æ®ï¼š".length());
+        System.out.println("=2015-12-18 01:55:24,441 INFO  [http-8080-5] impl.GatherServiceImpl (GatherServiceImpl.java:1298)     - æ£?éªŒç¡®è®¤æ•°æ®ï¼š".length());
     }
 }
