@@ -2,9 +2,11 @@
   <library name="lib">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/SwingSample/lib" />
+      <root url="file://$PROJECT_DIR$/Statistics/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/Statistics/lib" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/SwingSample/lib" recursive="false" />
   </library>
 </component>
