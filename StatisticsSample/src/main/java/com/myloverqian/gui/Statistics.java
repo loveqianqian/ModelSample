@@ -17,17 +17,12 @@ import java.io.File;
 /**
  * @author zhiwei
  */
-public class Statistics extends JDialog {
+public class Statistics extends JFrame {
 
     private static String pathUrl = "";
 
-    public Statistics(Frame owner) {
-        super(owner);
-        initComponents();
-    }
-
-    public Statistics(Dialog owner) {
-        super(owner);
+    public Statistics( ) {
+        super();
         initComponents();
     }
 
@@ -45,6 +40,12 @@ public class Statistics extends JDialog {
             path.setText(file.getAbsolutePath());
             pathUrl = file.getAbsolutePath();
         }
+    }
+
+    public static void main(String[] args) {
+        Statistics statistics = new Statistics();
+        statistics.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        statistics.setVisible(true);
     }
 
     private void initComponents() {
