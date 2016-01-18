@@ -82,6 +82,7 @@ public class AnalyzeUtils {
         int countXinWaiKe = 0;
         int countXiongWai1ke = 0;
         int countZongHeBingFang = 0;
+        int countXinNei2ke=0;
         for (Template template : list) {
             if (template.getStatus().contains("已审核")) {
                 if (template.getId().contains("CCU")) {
@@ -114,20 +115,23 @@ public class AnalyzeUtils {
                 if (template.getId().contains("心内八科")) {
                     countXinNei8ke += Integer.parseInt(template.getStatusCount());
                 }
-                if (template.getId().contains("心内六科")) {
-                    countXinNei6ke += Integer.parseInt(template.getStatusCount());
-                }
                 if (template.getId().contains("心内七科")) {
                     countXinNei7ke += Integer.parseInt(template.getStatusCount());
                 }
-                if (template.getId().contains("心内三科")) {
-                    countXinNei3ke += Integer.parseInt(template.getStatusCount());
+                if (template.getId().contains("心内六科")) {
+                    countXinNei6ke += Integer.parseInt(template.getStatusCount());
+                }
+                if (template.getId().contains("心内五科")) {
+                    countXinNei5ke += Integer.parseInt(template.getStatusCount());
                 }
                 if (template.getId().contains("心内四科")) {
                     countXinNei4ke += Integer.parseInt(template.getStatusCount());
                 }
-                if (template.getId().contains("心内五科")) {
-                    countXinNei5ke += Integer.parseInt(template.getStatusCount());
+                if (template.getId().contains("心内三科")) {
+                    countXinNei3ke += Integer.parseInt(template.getStatusCount());
+                }
+                if (template.getId().contains("心内二科")) {
+                    countXinNei2ke += Integer.parseInt(template.getStatusCount());
                 }
                 if (template.getId().contains("心内一科")) {
                     countXinNei1ke += Integer.parseInt(template.getStatusCount());
@@ -162,6 +166,7 @@ public class AnalyzeUtils {
         result.append(",心内7科" + countXinNei7ke + "份");
         result.append(",心内4科" + countXinNei4ke + "份");
         result.append(",心内5科" + countXinNei5ke + "份");
+        result.append(",心内2科" + countXinNei5ke + "份");
         result.append(",心内1科" + countXinNei1ke + "份");
         result.append(",综合病房" + countZongHeBingFang + "份");
     }

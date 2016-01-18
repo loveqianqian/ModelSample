@@ -33,6 +33,7 @@ public class Statistics extends JDialog {
 
     private void okButtonActionPerformed(ActionEvent e) {
         GenerateFile generate = new GenerateFile(pathUrl);
+        generate.generateMethod();
     }
 
     private void selectButtonActionPerformed(ActionEvent e) {
@@ -70,20 +71,20 @@ public class Statistics extends JDialog {
             {
                 panel1.setLayout(new GridLayoutManager(5, 6, new Insets(0, 0, 0, 0), -1, -1));
                 panel1.add(path, new GridConstraints(1, 0, 1, 6,
-                    GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
-                    GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                    GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                    null, null, null));
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+                        null, null, null));
                 panel1.add(vSpacer1, new GridConstraints(2, 4, 1, 1,
-                    GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL,
-                    GridConstraints.SIZEPOLICY_CAN_SHRINK,
-                    GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
-                    null, null, null));
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK,
+                        GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
+                        null, null, null));
                 panel1.add(hSpacer1, new GridConstraints(3, 0, 1, 4,
-                    GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
-                    GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
-                    GridConstraints.SIZEPOLICY_CAN_SHRINK,
-                    null, null, null));
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
+                        GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK,
+                        null, null, null));
             }
             dialogPane.add(panel1, BorderLayout.CENTER);
 
@@ -91,8 +92,8 @@ public class Statistics extends JDialog {
             {
                 buttonBar.setBorder(Borders.createEmptyBorder("5dlu, 0dlu, 0dlu, 0dlu"));
                 buttonBar.setLayout(new FormLayout(
-                    "$glue, $button, $rgap, $button",
-                    "pref"));
+                        "$glue, $button, $rgap, $button",
+                        "pref"));
 
                 //---- okButton ----
                 okButton.setText("OK");
