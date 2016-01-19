@@ -19,8 +19,8 @@ public class DBUtils {
     static {
         Properties properties = new Properties();
         try {
-//            properties.load(new FileInputStream(System.getProperty(Constant.USER_DIR) + Constant.LAST_OF_PATH));
-            properties.load(new FileInputStream(System.getProperty(Constant.USER_DIR) + Constant.LAST_OF_PATH_2));
+            properties.load(new FileInputStream(System.getProperty("user.dir") + "\\CatheterSample\\resources\\db.properties"));
+//            properties.load(new FileInputStream(System.getProperty("user.dir") + "\\resources\\db.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }

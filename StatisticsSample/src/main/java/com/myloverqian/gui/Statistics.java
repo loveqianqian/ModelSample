@@ -1,29 +1,31 @@
+/*
+ * Created by JFormDesigner on Mon Jan 18 17:03:38 CST 2016
+ */
+
 package com.myloverqian.gui;
 
-import java.awt.event.*;
-
-import com.intellij.uiDesigner.core.GridConstraints;
-import com.intellij.uiDesigner.core.GridLayoutManager;
-import com.intellij.uiDesigner.core.Spacer;
-import com.jgoodies.forms.factories.Borders;
-import com.jgoodies.forms.factories.CC;
-import com.jgoodies.forms.layout.FormLayout;
 import com.myloverqian.control.GenerateFile;
 
-import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.io.File;
+import javax.swing.*;
+import javax.swing.border.*;
 
 /**
  * @author zhiwei
  */
 public class Statistics extends JFrame {
-
     private static String pathUrl = "";
 
-    public Statistics( ) {
-        super();
+    public Statistics() {
         initComponents();
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new Statistics();
     }
 
     private void okButtonActionPerformed(ActionEvent e) {
@@ -42,22 +44,14 @@ public class Statistics extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        Statistics statistics = new Statistics();
-        statistics.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        statistics.setVisible(true);
-    }
-
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         dialogPane = new JPanel();
-        panel1 = new JPanel();
+        contentPanel = new JPanel();
         path = new JTextField();
-        Spacer vSpacer1 = new Spacer();
-        Spacer hSpacer1 = new Spacer();
         buttonBar = new JPanel();
         okButton = new JButton();
-        Select = new JButton();
+        selectButton = new JButton();
 
         //======== this ========
         Container contentPane = getContentPane();
@@ -65,54 +59,46 @@ public class Statistics extends JFrame {
 
         //======== dialogPane ========
         {
-            dialogPane.setBorder(Borders.createEmptyBorder("7dlu, 7dlu, 7dlu, 7dlu"));
+            dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
             dialogPane.setLayout(new BorderLayout());
 
-            //======== panel1 ========
+            //======== contentPanel ========
             {
-                panel1.setLayout(new GridLayoutManager(5, 6, new Insets(0, 0, 0, 0), -1, -1));
-                panel1.add(path, new GridConstraints(1, 0, 1, 6,
-                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                        null, null, null));
-                panel1.add(vSpacer1, new GridConstraints(2, 4, 1, 1,
-                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_VERTICAL,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK,
-                        GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
-                        null, null, null));
-                panel1.add(hSpacer1, new GridConstraints(3, 0, 1, 4,
-                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
-                        GridConstraints.SIZEPOLICY_CAN_GROW | GridConstraints.SIZEPOLICY_WANT_GROW,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK,
-                        null, null, null));
+                contentPanel.setLayout(new BorderLayout());
+                contentPanel.add(path, BorderLayout.CENTER);
             }
-            dialogPane.add(panel1, BorderLayout.CENTER);
+            dialogPane.add(contentPanel, BorderLayout.CENTER);
 
             //======== buttonBar ========
             {
-                buttonBar.setBorder(Borders.createEmptyBorder("5dlu, 0dlu, 0dlu, 0dlu"));
-                buttonBar.setLayout(new FormLayout(
-                        "$glue, $button, $rgap, $button",
-                        "pref"));
+                buttonBar.setBorder(new EmptyBorder(12, 0, 0, 0));
+                buttonBar.setLayout(new GridBagLayout());
+                ((GridBagLayout)buttonBar.getLayout()).columnWidths = new int[] {0, 85, 80};
+                ((GridBagLayout)buttonBar.getLayout()).columnWeights = new double[] {1.0, 0.0, 0.0};
 
                 //---- okButton ----
                 okButton.setText("OK");
                 okButton.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         okButtonActionPerformed(e);
                     }
                 });
-                buttonBar.add(okButton, CC.xy(2, 1));
+                buttonBar.add(okButton, new GridBagConstraints(1, 0, 1, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 0, 5), 0, 0));
 
-                //---- Select ----
-                Select.setText("Select");
-                Select.addActionListener(new ActionListener() {
+                //---- selectButton ----
+                selectButton.setText("Select");
+                selectButton.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent e) {
                         selectButtonActionPerformed(e);
                     }
                 });
-                buttonBar.add(Select, CC.xy(4, 1));
+                buttonBar.add(selectButton, new GridBagConstraints(2, 0, 1, 1, 0.0, 0.0,
+                    GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                    new Insets(0, 0, 0, 0), 0, 0));
             }
             dialogPane.add(buttonBar, BorderLayout.SOUTH);
         }
@@ -124,10 +110,10 @@ public class Statistics extends JFrame {
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     private JPanel dialogPane;
-    private JPanel panel1;
+    private JPanel contentPanel;
     private JTextField path;
     private JPanel buttonBar;
     private JButton okButton;
-    private JButton Select;
+    private JButton selectButton;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

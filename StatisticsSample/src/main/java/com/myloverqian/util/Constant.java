@@ -9,6 +9,8 @@ public class Constant {
 
     public static final String LAST_OF_PATH = "\\StatisticsSample\\resources\\db.properties";
 
+    public static final String LAST_OF_PATH_2 = "\\resources\\db.properties";
+
     public static final int BEGIN_ROW_NO = 1;
 
     public static final int BEGIN_CELL_NO = 1;
