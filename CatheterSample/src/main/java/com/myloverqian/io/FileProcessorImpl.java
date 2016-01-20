@@ -30,7 +30,7 @@ public class FileProcessorImpl implements FileProcessor {
                     }
                 }
                 if (flag) {
-                    lineProcessor.needToDo(line);
+                    lineProcessor.needToDo(line.trim());
                 }
             }
         } catch (FileNotFoundException e) {
@@ -73,7 +73,28 @@ public class FileProcessorImpl implements FileProcessor {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
+            IOUtils.closeQuietly(inputStreamReader);
+            IOUtils.closeQuietly(br);
+        }
+    }
+
+    @Override
+    public void processorByLineReversion(File file, LineProcessor lineProcessor) {
+        InputStreamReader inputStreamReader = null;
+        BufferedReader br = null;
+        try {
+            inputStreamReader = new InputStreamReader(new FileInputStream(file), "GBk");
+            br = new BufferedReader(inputStreamReader);
+            String line = "";
+            while ((line = br.readLine()) != null) {
+                lineProcessor.needToDo(line.trim());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             IOUtils.closeQuietly(inputStreamReader);
             IOUtils.closeQuietly(br);
         }

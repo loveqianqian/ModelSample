@@ -9,4 +9,6 @@ public interface FileProcessor {
     void processorByLine(String filePath, LineProcessor lineProcessor);
 
     void processorByLine(File file, LineProcessor lineProcessor);
+
+    void processorByLineReversion(File file,LineProcessor lineProcessor);
 }
