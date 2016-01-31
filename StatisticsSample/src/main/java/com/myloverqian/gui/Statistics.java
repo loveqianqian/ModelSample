@@ -4,7 +4,16 @@
 
 package com.myloverqian.gui;
 
+<<<<<<< Updated upstream
 import com.myloverqian.control.GenerateFile;
+=======
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.intellij.uiDesigner.core.Spacer;
+import com.jgoodies.forms.factories.Borders;
+import com.jgoodies.forms.factories.CC;
+import com.jgoodies.forms.layout.FormLayout;
+>>>>>>> Stashed changes
 
 import java.awt.*;
 import java.awt.event.*;

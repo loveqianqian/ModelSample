@@ -1,26 +1,19 @@
 package com.myloverqian.db;
 
+import com.myloverqian.bean.Template;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
 /**
- * Created by dzw on 2016/1/18.
+ * Created by dzw on 2016/1/15.
  */
-public class TemplateCheckTest {
+public class templateCheckTest {
 
     @Test
-    public void testGetTemplateSample() throws Exception {
-
-    }
-
-    @Test
-    public void testGetTemplateCheck() throws Exception {
-
-    }
-
-    @Test
-    public void testGetTemplateManufacture() throws Exception {
-
+    public void testGetTemplate() throws Exception {
+        TemplateCheck tc = new TemplateCheck();
+        List<Template> templateList = tc.getTemplat();
+        System.out.println(templateList.get(0).toString());
     }
 }
