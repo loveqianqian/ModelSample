@@ -16,7 +16,7 @@ import java.net.URL;
  */
 public class WeatherClient2 {
     public static void main(String[] args) throws MalformedURLException {
-        URL url = new URL("http://192.168.40.1:8081/weather");
+        URL url = new URL("http://192.168.40.1:1808/weather");
         QName qName = new QName("http://impl.Server.myloverqian.com/", "WeatherImplService");
         Service service = Service.create(url, qName);
         WeatherImpl port = service.getPort(WeatherImpl.class);

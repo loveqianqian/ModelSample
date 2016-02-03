@@ -7,8 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/ObserveModel/ObserveModel.iml" filepath="$PROJECT_DIR$/ObserveModel/ObserveModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProxySample/ProxySample.iml" filepath="$PROJECT_DIR$/ProxySample/ProxySample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Statistics/Statistics.iml" filepath="$PROJECT_DIR$/Statistics/Statistics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StatisticsSample/StatisticsSample.iml" filepath="$PROJECT_DIR$/StatisticsSample/StatisticsSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamSample/StreamSample.iml" filepath="$PROJECT_DIR$/StreamSample/StreamSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwingSample/SwingSample.iml" filepath="$PROJECT_DIR$/SwingSample/SwingSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadSample/ThreadSample.iml" filepath="$PROJECT_DIR$/ThreadSample/ThreadSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebClientSample/WebClientSample.iml" filepath="$PROJECT_DIR$/WebClientSample/WebClientSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServerSample/WebServerSample.iml" filepath="$PROJECT_DIR$/WebServerSample/WebServerSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmlSample/xmlSample.iml" filepath="$PROJECT_DIR$/xmlSample/xmlSample.iml" />
     </modules>
   </component>

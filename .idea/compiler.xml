@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="xmlSample" />
       </profile>
+      <profile default="false" name="Annotation profile for StatisticsSample" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="StatisticsSample" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="StatisticsSample" target="1.7" />
       <module name="xmlSample" target="1.5" />
     </bytecodeTargetLevel>
   </component>
